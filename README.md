@@ -1,3 +1,5 @@
+markdown
+Copy code
 # Loops Projects in Java
 
 This repository contains a collection of Java projects that demonstrate the use of different types of loops (`for`, `while`, `do-while`) and other related programming concepts. Each project focuses on applying loops to solve a specific problem. 
@@ -32,17 +34,6 @@ This program asks the user to enter a positive nonzero integer. It then calculat
 ```bash
 javac SumOfNumbers.java
 java SumOfNumbers
-
-
-
-### Explanation:
-- The **Table of Contents** links to each individual project for easier navigation.
-- Each project description provides a brief overview and example of how to compile and run the program.
-- The **How to Use** section explains the general procedure for cloning the repository, compiling, and running any program.
-- The `README.md` file is formatted for easy readability and use in a GitHub repository.
-
-You can now use this to create a `README.md` file for your repository on GitHub. Let me know if you need any adjustments or help with any of the projects!
-
 2. Distance Traveled
 This program calculates the distance a vehicle travels for each hour of a given time period based on user input for speed and time.
 
@@ -131,8 +122,8 @@ Usage:
 
 bash
 Copy code
-javac CelsiusToFahrenheitTable.java
-java CelsiusToFahrenheitTable
+javac CelsiusToFahrenheit.java
+java CelsiusToFahrenheit
 12. Bar Chart
 This program generates a simple bar chart based on sales figures entered for five stores. Each bar represents sales using asterisks, with each asterisk representing $100.
 
@@ -200,22 +191,18 @@ How to Use
 To run any of these programs:
 
 Clone the repository:
-
 bash
 Copy code
-git clone https://github.com/YourUsername/Loops-Projects.git
+git clone https://github.com/YourUsername/JavaLoops.git
 Navigate to the specific project folder:
-
 bash
 Copy code
 cd path/to/project/folder
 Compile the .java file:
-
 bash
 Copy code
 javac FileName.java
 Run the program:
-
 bash
 Copy code
 java FileName
@@ -224,19 +211,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Feel free to explore, modify, and improve upon these projects. Happy coding!
 
-vbnet
+sql
 Copy code
 
-### Explanation:
-- The **Table of Contents** links to each individual project for easier navigation.
-- Each project description provides a brief overview and example of how to compile and run the program.
-- The **How to Use** section explains the general procedure for cloning the repository, compiling, and running any program.
-- The `README.md` file is formatted for easy readability and use in a GitHub repository.
-
-You can now use this to create a `README.md` file for your repository on GitHub. Let me know if you need any adjustments or help with any of the projects!
-
-
-
-
-
-
+This version has all the projects and their usage examples properly format
