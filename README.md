@@ -25,21 +25,10 @@ This repository contains a collection of Java projects that demonstrate the use 
 
 ---
 
-### 1. Sum of Numbers
-This program asks the user to enter a positive nonzero integer. It then calculates and displays the sum of all the numbers from 1 up to the entered value.
-
-**Usage:**
-```bash
-javac SumOfNumbers.java
-java SumOfNumbers
 
 
 
-### Explanation:
-- The **Table of Contents** links to each individual project for easier navigation.
-- Each project description provides a brief overview and example of how to compile and run the program.
-- The **How to Use** section explains the general procedure for cloning the repository, compiling, and running any program.
-- The `README.md` file is formatted for easy readability and use in a GitHub repository.
 
-You can now use this to create a `README.md` file for your repository on GitHub. Let me know if you need any adjustments or help with any of the projects!
+
+
 
