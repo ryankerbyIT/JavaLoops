@@ -26,6 +26,12 @@ This repository contains a collection of Java projects that demonstrate the use 
 ---
 
 
+2. Distance Traveled
+This program calculates the distance a vehicle travels for each hour of a given time period based on user input for speed and time.
+
+Usage:
+javac DistanceTraveled.java
+java DistanceTraveled
 
 
 
