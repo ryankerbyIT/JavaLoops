@@ -1,21 +1,14 @@
-<!-- This is a test comment to trigger a rebuild -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Java Loops - Technical Documentation</title>
-=======
-    <title>Technical Documentation: File Input and Output in Java</title>
->>>>>>> 8596dc77140a5c37ac0f8bf45fe29123698e0afa
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-<<<<<<< HEAD
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
@@ -79,74 +72,10 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-=======
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            width: 200px;
-            float: left;
-            background-color: #444;
-            color: white;
-            height: 100vh;
-            position: sticky;
-            top: 0;
-            padding: 15px;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 15px 0;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            color: #f4f4f4;
-        }
-        main {
-            margin-left: 220px;
-            padding: 20px;
-            background-color: white;
-            max-width: 800px;
-        }
-        main h2 {
-            color: #333;
-        }
-        code {
-            display: block;
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-left: 3px solid #333;
-            margin-bottom: 20px;
-            white-space: pre-wrap;
-        }
-        .example-output {
-            background-color: #f4f4f4;
-            border-left: 3px solid #333;
-            padding: 10px;
-            margin-bottom: 20px;
->>>>>>> 8596dc77140a5c37ac0f8bf45fe29123698e0afa
         }
     </style>
 </head>
 <body>
-<<<<<<< HEAD
 
 <header>
     <h1>Java Loops - Technical Documentation</h1>
@@ -158,21 +87,21 @@
     <a href="#do-while-loop">Do-While Loop</a>
     <a href="#for-loop">For Loop</a>
     <a href="#enhanced-for-loop">Enhanced For Loop</a>
-    <a href="#use-cases">Use Cases of Loops</a>
+    <a href="#use-cases">Use Cases</a>
 </nav>
 
 <main>
     <section id="introduction">
         <h2>Introduction</h2>
         <p>
-            In Java, loops are fundamental constructs that allow a set of instructions to be repeated multiple times, depending on a condition. This reduces the amount of code you need to write and helps in managing repetitive tasks. Java provides different types of loops that are tailored for various use cases. This documentation explains the various types of loops available in Java and their respective use cases.
+            Loops are essential structures in Java that allow you to execute a block of code repeatedly. Depending on the condition provided, the loop will continue executing as long as the condition is met. Java offers several types of loops, such as <code>while</code>, <code>do-while</code>, <code>for</code>, and the enhanced <code>for</code> loop. Each loop is used for specific situations and optimizations. Let's explore them in detail.
         </p>
     </section>
 
     <section id="while-loop">
         <h2>While Loop</h2>
         <p>
-            A <code>while</code> loop is a control flow statement that repeatedly executes a block of code as long as the provided condition is <code>true</code>. The condition is evaluated before the loop body is executed, so if the condition is <code>false</code> at the beginning, the loop will not run at all.
+            The <code>while</code> loop is one of the most basic loops in Java. It checks the condition before the block of code is executed. If the condition evaluates to <code>true</code>, the loop runs; otherwise, it terminates.
         </p>
         <h3>Syntax:</h3>
         <pre><code>
@@ -196,13 +125,15 @@ while (i < 5) {
 3
 4
         </code></pre>
-        <p>In this example, the <code>while</code> loop executes as long as the variable <code>i</code> is less than 5.</p>
+        <p>
+            The above code prints numbers from 0 to 4, incrementing <code>i</code> each time. The loop runs as long as <code>i</code> is less than 5.
+        </p>
     </section>
 
     <section id="do-while-loop">
         <h2>Do-While Loop</h2>
         <p>
-            The <code>do-while</code> loop is similar to the <code>while</code> loop, but it guarantees that the loop will execute at least once. This is because the condition is checked after the code block is executed.
+            The <code>do-while</code> loop is similar to the <code>while</code> loop but differs in one key aspect: it guarantees that the block of code is executed at least once, even if the condition is <code>false</code>.
         </p>
         <h3>Syntax:</h3>
         <pre><code>
@@ -227,14 +158,14 @@ do {
 4
         </code></pre>
         <p>
-            The <code>do-while</code> loop ensures that the block of code will run at least once, regardless of the condition's outcome.
+            This loop behaves like the <code>while</code> loop, except it prints at least once, even if the condition is not met initially.
         </p>
     </section>
 
     <section id="for-loop">
         <h2>For Loop</h2>
         <p>
-            A <code>for</code> loop provides a more concise way of writing loops in Java. The <code>for</code> loop contains an initializer, a condition, and an increment or decrement operator, all in a single line. This loop is useful when you know in advance how many times you want the block of code to run.
+            The <code>for</code> loop is used when you know the number of iterations in advance. It allows you to define the initialization, condition, and increment/decrement in a single line, making it very powerful for iterating over a range of values.
         </p>
         <h3>Syntax:</h3>
         <pre><code>
@@ -256,13 +187,15 @@ for (int i = 0; i < 5; i++) {
 3
 4
         </code></pre>
-        <p>In this example, the <code>for</code> loop will run 5 times, with <code>i</code> starting at 0 and incrementing by 1 each iteration until it reaches 5.</p>
+        <p>
+            The <code>for</code> loop runs exactly 5 times, starting at <code>i = 0</code> and increasing <code>i</code> by 1 each iteration until <code>i &lt; 5</code>.
+        </p>
     </section>
 
     <section id="enhanced-for-loop">
         <h2>Enhanced For Loop</h2>
         <p>
-            The enhanced <code>for</code> loop, also known as the <code>for-each</code> loop, is used to iterate through arrays or collections in Java. It provides a simple and more readable way to access each element in the collection, avoiding the complexity of managing index variables.
+            Also known as the <code>for-each</code> loop, the enhanced <code>for</code> loop is used primarily for iterating through arrays or collections. It eliminates the need for a counter or index variable, making it simpler and safer to use when you want to access each element of an array or collection.
         </p>
         <h3>Syntax:</h3>
         <pre><code>
@@ -286,22 +219,22 @@ for (int num : numbers) {
 5
         </code></pre>
         <p>
-            In this example, the enhanced <code>for</code> loop iterates through the array <code>numbers</code>, printing each element.
+            The enhanced <code>for</code> loop iterates through each element in the array and prints it, simplifying the loop operation for arrays and collections.
         </p>
     </section>
 
     <section id="use-cases">
-        <h2>Use Cases of Loops</h2>
+        <h2>Use Cases</h2>
         <p>
-            Loops are a powerful tool in programming and can be used for various tasks, such as:
+            Loops are useful in a wide range of programming scenarios, including:
         </p>
         <ul>
-            <li>Repeating tasks a specific number of times (e.g., counting loops).</li>
-            <li>Iterating over arrays and collections to access or manipulate elements.</li>
-            <li>Building programs that require constant checking of conditions, such as games or simulations.</li>
-            <li>Reading data from external sources like files or user inputs until a condition is met.</li>
+            <li>Iterating through elements in an array or collection.</li>
+            <li>Executing code multiple times until a condition is met.</li>
+            <li>Building infinite loops for background tasks (with exit conditions).</li>
+            <li>Processing user inputs or reading files until the end of the file is reached.</li>
         </ul>
-        <p>Understanding how and when to use each type of loop is crucial for writing efficient Java programs.</p>
+        <p>Choosing the right loop type depends on the situation and how the loop condition is structured.</p>
     </section>
 </main>
 
@@ -309,187 +242,5 @@ for (int num : numbers) {
     <p>Java Loops - Technical Documentation | &copy; 2024</p>
 </footer>
 
-=======
-    <header>
-        <h1>Technical Documentation: File Input and Output in Java</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#file-reader">FileReader</a></li>
-            <li><a href="#file-writer">FileWriter</a></li>
-            <li><a href="#buffered-io">Buffered I/O</a></li>
-            <li><a href="#print-writer">PrintWriter</a></li>
-            <li><a href="#exceptions">Handling Exceptions</a></li>
-            <li><a href="#file-paths">File Paths</a></li>
-            <li><a href="#summary">Summary</a></li>
-            <li><a href="#best-practices">Best Practices</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section id="overview">
-            <h2>Overview</h2>
-            <p>File input and output (I/O) in Java allows programs to read from and write to external files. Java provides several classes and methods for handling file I/O, all contained within the <code>java.io</code> package. This documentation covers essential steps for reading and writing files in Java.</p>
-        </section>
-
-        <section id="file-reader">
-            <h2>FileReader</h2>
-            <p><code>FileReader</code> is used to read data from a file in the form of characters. It is often used with <code>BufferedReader</code> for efficient reading.</p>
-
-            <h3>Example:</h3>
-            <code>
-                import java.io.FileReader;<br>
-                import java.io.BufferedReader;<br>
-                import java.io.IOException;<br><br>
-                public class FileInputExample {<br>
-                &emsp;public static void main(String[] args) {<br>
-                &emsp;&emsp;try {<br>
-                &emsp;&emsp;&emsp;FileReader fileReader = new FileReader("example.txt");<br>
-                &emsp;&emsp;&emsp;BufferedReader bufferedReader = new BufferedReader(fileReader);<br>
-                &emsp;&emsp;&emsp;String line;<br>
-                <br>
-                &emsp;&emsp;&emsp;while ((line = bufferedReader.readLine()) != null) {<br>
-                &emsp;&emsp;&emsp;&emsp;System.out.println(line);<br>
-                &emsp;&emsp;&emsp;}<br>
-                <br>
-                &emsp;&emsp;&emsp;bufferedReader.close();<br>
-                &emsp;&emsp;} catch (IOException e) {<br>
-                &emsp;&emsp;&emsp;e.printStackTrace();<br>
-                &emsp;&emsp;}<br>
-                &emsp;}<br>
-                }
-            </code>
-        </section>
-
-        <section id="file-writer">
-            <h2>FileWriter</h2>
-            <p><code>FileWriter</code> writes data to a file in the form of characters. It is often combined with <code>BufferedWriter</code> for efficient writing operations.</p>
-
-            <h3>Example:</h3>
-            <code>
-                import java.io.FileWriter;<br>
-                import java.io.BufferedWriter;<br>
-                import java.io.IOException;<br><br>
-                public class FileOutputExample {<br>
-                &emsp;public static void main(String[] args) {<br>
-                &emsp;&emsp;try {<br>
-                &emsp;&emsp;&emsp;FileWriter fileWriter = new FileWriter("output.txt");<br>
-                &emsp;&emsp;&emsp;BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);<br>
-                <br>
-                &emsp;&emsp;&emsp;bufferedWriter.write("This is an example of writing to a file.");<br>
-                &emsp;&emsp;&emsp;bufferedWriter.newLine();<br>
-                &emsp;&emsp;&emsp;bufferedWriter.write("Writing another line of text.");<br>
-                <br>
-                &emsp;&emsp;&emsp;bufferedWriter.close();<br>
-                &emsp;&emsp;} catch (IOException e) {<br>
-                &emsp;&emsp;&emsp;e.printStackTrace();<br>
-                &emsp;&emsp;}<br>
-                &emsp;}<br>
-                }
-            </code>
-        </section>
-
-        <section id="buffered-io">
-            <h2>Buffered I/O</h2>
-            <p><code>BufferedReader</code> and <code>BufferedWriter</code> are efficient wrappers around <code>FileReader</code> and <code>FileWriter</code> that improve performance by buffering data.</p>
-
-            <h3>Example:</h3>
-            <code>
-                import java.io.*;<br><br>
-                public class BufferedFileIOExample {<br>
-                &emsp;public static void main(String[] args) {<br>
-                &emsp;&emsp;String inputFile = "input.txt";<br>
-                &emsp;&emsp;String outputFile = "output.txt";<br><br>
-                &emsp;&emsp;try (<br>
-                &emsp;&emsp;&emsp;BufferedReader reader = new BufferedReader(new FileReader(inputFile));<br>
-                &emsp;&emsp;&emsp;BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile));<br>
-                &emsp;&emsp;) {<br>
-                &emsp;&emsp;&emsp;String line;<br>
-                &emsp;&emsp;&emsp;while ((line = reader.readLine()) != null) {<br>
-                &emsp;&emsp;&emsp;&emsp;writer.write(line);<br>
-                &emsp;&emsp;&emsp;&emsp;writer.newLine();<br>
-                &emsp;&emsp;&emsp;}<br>
-                &emsp;&emsp;} catch (IOException e) {<br>
-                &emsp;&emsp;&emsp;e.printStackTrace();<br>
-                &emsp;&emsp;}<br>
-                &emsp;}<br>
-                }
-            </code>
-        </section>
-
-        <section id="print-writer">
-            <h2>PrintWriter</h2>
-            <p><code>PrintWriter</code> allows for formatted output to a file, making it useful for writing structured text files. It supports methods such as <code>println()</code>, <code>print()</code>, and <code>printf()</code>.</p>
-
-            <h3>Example:</h3>
-            <code>
-                import java.io.PrintWriter;<br>
-                import java.io.FileWriter;<br>
-                import java.io.IOException;<br><br>
-                public class PrintWriterExample {<br>
-                &emsp;public static void main(String[] args) {<br>
-                &emsp;&emsp;try (PrintWriter writer = new PrintWriter(new FileWriter("print_output.txt"))) {<br>
-                &emsp;&emsp;&emsp;writer.println("Hello, World!");<br>
-                &emsp;&emsp;&emsp;writer.printf("Formatted number: %.2f", 123.456);<br>
-                &emsp;&emsp;} catch (IOException e) {<br>
-                &emsp;&emsp;&emsp;e.printStackTrace();<br>
-                &emsp;&emsp;}<br>
-                &emsp;}<br>
-                }
-            </code>
-        </section>
-
-        <section id="exceptions">
-            <h2>Handling Exceptions</h2>
-            <p>File I/O operations in Java can throw several types of exceptions, including:</p>
-            <ul>
-                <li><strong><code>FileNotFoundException</code></strong>: Thrown when attempting to open a file that does not exist.</li>
-                <li><strong><code>IOException</code></strong>: Thrown when an I/O operation fails, such as during reading or writing.</li>
-            </ul>
-
-            <h3>Example of Exception Handling:</h3>
-            <code>
-                try {<br>
-                &emsp;BufferedReader reader = new BufferedReader(new FileReader("nonexistent.txt"));<br>
-                } catch (FileNotFoundException e) {<br>
-                &emsp;System.out.println("The specified file was not found.");<br>
-                } catch (IOException e) {<br>
-                &emsp;System.out.println("An I/O error occurred.");<br>
-                }
-            </code>
-        </section>
-
-        <section id="file-paths">
-            <h2>File Paths</h2>
-            <p>Java supports both relative and absolute file paths when working with file input/output:</p>
-
-            <h3>Relative Path Example:</h3>
-            <code>
-                BufferedReader reader = new BufferedReader(new FileReader("files/example.txt"));
-            </code>
-
-            <h3>Absolute Path Example:</h3>
-            <code>
-                BufferedReader reader = new BufferedReader(new FileReader("/home/user/documents/example.txt"));
-            </code>
-        </section>
-
-        <section id="summary">
-            <h2>Summary</h2>
-            <p>Java's file input and output framework provides multiple options for reading and writing files. Using classes such as <code>FileReader</code>, <code>FileWriter</code>, <code>BufferedReader</code>, <code>BufferedWriter</code>, and <code>PrintWriter</code>, developers can efficiently handle I/O tasks while managing exceptions like <code>IOException</code>.</p>
-        </section>
-
-        <section id="best-practices">
-            <h2>Best Practices</h2>
-            <ul>
-                <li><strong>Use Buffered I/O</strong>: Always prefer buffered readers and writers for performance.</li>
-                <li><strong>Close Resources</strong>: Use <code>try-with-resources</code> or ensure that file streams are properly closed to avoid resource leaks.</li>
-                <li><strong>Handle Exceptions</strong>: Properly handle exceptions to ensure your program doesn't crash unexpectedly.</li>
-            </ul>
-        </section>
-    </main>
->>>>>>> 8596dc77140a5c37ac0f8bf45fe29123698e0afa
 </body>
 </html>
