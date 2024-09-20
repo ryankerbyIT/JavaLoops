@@ -192,7 +192,7 @@ To run any of these programs:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/YourUsername/JavaLoops.git
+    git clone https://github.com/ryankerbyIT/JavaLoops.git
     ```
 2. Navigate to the specific project folder:
     ```bash
